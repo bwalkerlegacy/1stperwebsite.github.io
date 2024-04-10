@@ -40,6 +40,23 @@ li a:hover {
          max-width: 100%;
       }
 
+      * {
+        box-sizing: border-box;
+      }
+
+      .column {
+        float: left;
+        width: 50%;
+        padding: 5px;
+      }
+
+/* Clearfix (clear floats) */
+   .row::after {
+        content: "";
+        clear: both;
+        display: table;
+   }
+         
       body {
          background-color: lightgrey;
       }
@@ -58,7 +75,7 @@ li a:hover {
 
       
       <h1>World War II - European Theater</h1>
-      <br>
+      <p>World War II was fought between the allied countries and the Axis Powers</p>
       <div id="mainDiv">
          <div id="divOne" class="boxes">
                <img src="images.jpg" alt="allied powers" width="500" height="300">
@@ -68,6 +85,15 @@ li a:hover {
                <img src="Axis2.jpg" alt"axis powers" width="500" height="300">
           </div>
       </div>
+
+      <div class="row">
+        <div class="column">
+          <img src="images.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="Axis2.jpg" alt="Forest" style="width:100%">
+        </div>
+     </div>
 
       
       <p>WTF</p>
